@@ -36,4 +36,4 @@ end
 
 ExecuteGame()
 wait(1.5)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NervigeMuecke/ZYPHERION-V2/refs/heads/main/idkbruh.lua"))
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NervigeMuecke/Z3US-V2/refs/heads/main/idkbruh.lua"))
