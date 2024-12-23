@@ -1,8 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/Library.lua"))()
 local GameId = game.PlaceId
 
-local RunService = game:GetService("RunService")
-
 local function ExecuteRivals()
     Library:Notify("ZYPHERION currenlty doesnt have support for Rivals! Soon it will be avaible.", 5)
     wait(5)
