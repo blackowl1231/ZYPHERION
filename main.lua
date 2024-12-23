@@ -4,9 +4,9 @@ local GameId = game.PlaceId
 local RunService = game:GetService("RunService")
 
 local function ExecuteRivals()
-    Library:Notify("ZYPHERION has detected you being in Rivals.", 5)
+    Library:Notify("ZYPHERION currenlty doesnt have support for Rivals! Soon it will be avaible.", 5)
     wait(5)
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/blackowl1231/ZYPHYERION/main/Games/ZYPHERION%20Rivals.lua'))()
+   
 end
 
 local function ExecuteArsenal()
@@ -16,9 +16,9 @@ local function ExecuteArsenal()
 end
 
 local function ExecuteFront()
-    Library:Notify("ZYPHERION has detected you being in Frontlines.", 5)
+    Library:Notify("ZYPHERION currenlty doesnt have support for Frontlines! Soon it will be avaible.", 5)
     wait(5)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NervigeMuecke/ZYPHERION/main/Games/ZYPHERION%20Frontlines%20V1.0.0"))()
+    
 end
 
 
@@ -29,6 +29,8 @@ local function ExecuteGame()
         ExecuteRivals()
     elseif GameId == 5938036553 then
         ExecuteFront()
+    else 
+        Library:Notify("ZYPHERION currenlty doesnt have support for this Game!", 5)
     end
 end
 
