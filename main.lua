@@ -12,7 +12,7 @@ end
 local function ExecuteArsenal()
     Library:Notify("ZYPHERION has detected you being in Arsenal.", 5)
     wait(5)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NervigeMuecke/ZYPHERION/main/Games/ZYPHERION%20ARSENAL.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/ZYPHERION%20Arsenal%20Beta.lua"))()
 end
 
 local function ExecuteFront()
