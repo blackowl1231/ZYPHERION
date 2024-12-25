@@ -28,7 +28,7 @@ local function ExecuteGame()
     elseif GameId == 5938036553 then
         ExecuteFront()
     else 
-        Library:Notify("ZYPHERION currenlty doesnt have support for this Game!", 5)
+        game.Players.LocalPlayer:Kick("ZYPHERION currently doesn't support this game!")
     end
 end
 
