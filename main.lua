@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/violi
 local GameId = game.PlaceId
 
 local function ExecuteRivals()
-    Library:Notify("ZYPHERION currenlty doesnt have support for Rivals! Soon it will be avaible.", 5)
+    Library:Notify("ZYPHERION currently doesnt have support for Rivals! Soon it will be avaible.", 5)
     wait(5)
    
 end
@@ -14,7 +14,7 @@ local function ExecuteArsenal()
 end
 
 local function ExecuteFront()
-    Library:Notify("ZYPHERION currenlty doesnt have support for Frontlines! Soon it will be avaible.", 5)
+    Library:Notify("ZYPHERION currently doesnt have support for Frontlines! Soon it will be avaible.", 5)
     wait(5)
     
 end
