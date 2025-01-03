@@ -28,7 +28,7 @@ local function ExecuteGame()
     elseif GameId == 5938036553 then
         ExecuteFront()
     else 
-        game.Players.LocalPlayer:Kick("ZYPHERION currently doesn't support this game!")
+        game.Players.LocalPlayer:Kick("ZYPHERION currently doesn't support this game! Please Execute this script in Arsenal!")
     end
 end
 
