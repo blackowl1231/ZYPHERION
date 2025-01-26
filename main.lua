@@ -4,7 +4,7 @@ local GameId = game.PlaceId
 local function ExecuteRivals()
     Library:Notify("ZYPHERION has detected you being in Rivals.", 5)
     wait(5)
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/ZYPHERION%20Rivals%20Beta.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/ZYPHERION%20Rivals%20Beta.lua"))()
 end
 
 local function ExecuteArsenal()
@@ -14,9 +14,9 @@ local function ExecuteArsenal()
 end
 
 local function ExecuteFront()
-    Library:Notify("ZYPHERION currently doesnt have support for Frontlines! Soon it will be avaible.", 5)
-    wait(5)
-    
+    --Library:Notify("ZYPHERION currently doesnt have support for Frontlines! Soon it will be avaible.", 5)
+    --wait(5)
+    game.Players.LocalPlayer:Kick("ZYPHERION currently doesn't support this game! Please Execute this script in Arsenal or Rivals!")
 end
 
 
@@ -28,7 +28,7 @@ local function ExecuteGame()
     elseif GameId == 5938036553 then
         ExecuteFront()
     else 
-        game.Players.LocalPlayer:Kick("ZYPHERION currently doesn't support this game! Please Execute this script in Arsenal!")
+        game.Players.LocalPlayer:Kick("ZYPHERION currently doesn't support this game! Please Execute this script in Arsenal or Rivals!")
     end
 end
 
