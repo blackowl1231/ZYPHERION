@@ -2,9 +2,9 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/violi
 local GameId = game.PlaceId
 
 local function ExecuteRivals()
-    Library:Notify("ZYPHERION currently doesnt have support for Rivals! Soon it will be avaible.", 5)
+    Library:Notify("ZYPHERION has detected you being in Rivals.", 5)
     wait(5)
-   
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/ZYPHERION%20Rivals%20Beta.lua"))()
 end
 
 local function ExecuteArsenal()
