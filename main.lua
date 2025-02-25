@@ -153,7 +153,7 @@ TextLabel_6.BorderSizePixel = 0
 TextLabel_6.Position = UDim2.new(0.592667997, 0, 0.868360281, 0)
 TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_6.Font = Enum.Font.SourceSans
-TextLabel_6.Text = "Made by NervigeMuecke"
+TextLabel_6.Text = ""
 TextLabel_6.TextColor3 = Color3.fromRGB(217, 217, 217)
 TextLabel_6.TextSize = 14.000
 
