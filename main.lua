@@ -19,6 +19,7 @@ local function loadScript()
     local TextLabel_4 = Instance.new("TextLabel")
     local TextLabel_5 = Instance.new("TextLabel")
     local TextLabel_6 = Instance.new("TextLabel")
+    local UICorner_Load = Instance.new("UICorner")
 
     -- Properties
     ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
@@ -142,21 +143,22 @@ local function loadScript()
     TextLabel_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
     TextLabel_5.BorderSizePixel = 0
-    TextLabel_5.Position = UDim2.new(0, 0, 0.868360281, 0)
+    TextLabel_5.Position = UDim2.new(0.295315683, 0, 0.856812954, 0)
     TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
     TextLabel_5.Font = Enum.Font.SourceSans
     TextLabel_5.Text = "Thank you for using Zypherion<3"
     TextLabel_5.TextColor3 = Color3.fromRGB(217, 217, 217)
     TextLabel_5.TextSize = 14.000
-
+    
     TextLabel_6.Parent = Frame
     TextLabel_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
     TextLabel_6.BorderSizePixel = 0
     TextLabel_6.Position = UDim2.new(0.592667997, 0, 0.868360281, 0)
     TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
+    TextLabel_6.Visible = false
     TextLabel_6.Font = Enum.Font.SourceSans
-    TextLabel_6.Text = ""
+    TextLabel_6.Text = "Made by NervigeMuecke"
     TextLabel_6.TextColor3 = Color3.fromRGB(217, 217, 217)
     TextLabel_6.TextSize = 14.000
 
@@ -203,23 +205,26 @@ local function loadScript()
     end)
 
     local function CreateLoadingAnimation(parent)
-        local LoadingFrame = Instance.new("Frame")
-        LoadingFrame.Size = UDim2.new(1, 0, 1, 0)
-        LoadingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-        LoadingFrame.BackgroundTransparency = 0.5
-        LoadingFrame.Parent = parent
-
-        local LoadingLabel = Instance.new("TextLabel")
-        LoadingLabel.Text = "Loading..."
-        LoadingLabel.Size = UDim2.new(1, 0, 0, 30)
-        LoadingLabel.Position = UDim2.new(0, 0, 0.5, -15)
-        LoadingLabel.BackgroundTransparency = 1
-        LoadingLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-        LoadingLabel.Font = Enum.Font.GothamBold
-        LoadingLabel.TextSize = 16
-        LoadingLabel.Parent = LoadingFrame
-
-        return LoadingFrame
+    	local LoadingFrame = Instance.new("Frame")
+    	LoadingFrame.Size = UDim2.new(1, 0, 1, 0)
+    	LoadingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    	LoadingFrame.BackgroundTransparency = 0.5
+    	LoadingFrame.Parent = parent
+    
+    	local LoadingLabel = Instance.new("TextLabel")
+    	LoadingLabel.Text = "Loading..."
+    	LoadingLabel.Size = UDim2.new(1, 0, 0, 30)
+    	LoadingLabel.Position = UDim2.new(0, 0, 0.5, -15)
+    	LoadingLabel.BackgroundTransparency = 1
+    	LoadingLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    	LoadingLabel.Font = Enum.Font.GothamBold
+    	LoadingLabel.TextSize = 16
+    	LoadingLabel.Parent = LoadingFrame
+    	
+    	UICorner_Load.CornerRadius = UDim.new(0.03, 0)
+    	UICorner_Load.Parent = LoadingFrame
+    
+    	return LoadingFrame
     end
 
     TextButton.MouseButton1Click:Connect(function()
