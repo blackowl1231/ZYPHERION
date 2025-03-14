@@ -19,7 +19,6 @@ local function loadScript()
     local TextLabel_4 = Instance.new("TextLabel")
     local TextLabel_5 = Instance.new("TextLabel")
     local TextLabel_6 = Instance.new("TextLabel")
-    local UICorner_Load = Instance.new("UICorner")
 
     -- Properties
     ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
@@ -220,9 +219,6 @@ local function loadScript()
     	LoadingLabel.Font = Enum.Font.GothamBold
     	LoadingLabel.TextSize = 16
     	LoadingLabel.Parent = LoadingFrame
-    	
-    	UICorner_Load.CornerRadius = UDim.new(0.03, 0)
-    	UICorner_Load.Parent = LoadingFrame
     
     	return LoadingFrame
     end
