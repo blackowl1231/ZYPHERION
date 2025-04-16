@@ -230,14 +230,15 @@ local gm = ''
 
 CustomServers:Button({
     text = 'Create Server',
-    color = Color3.fromRGB(19,0,255),
+    color = Color3.fromRGB(19, 0, 255),
     order = 3,
     callback = function()
-        local main131 = game.ReplicatedStorage.Events.CreateConstant:InvokeServer(gm)
-        game.ReplicatedStorage.Events.JoinPrivate:FireServer(main131)
-        setclipboard(main131)
+        local ab, abc = game.ReplicatedStorage.Events.CreateConstant:InvokeServer(gm)
+        game.ReplicatedStorage.Events.JoinPrivate:FireServer(abc)
+        setclipboard(abc)
     end
 })
+
 
 CustomServers:Dropdown({
     text = "Game Modes", 
