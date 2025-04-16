@@ -27,7 +27,7 @@ Title.BackgroundTransparency = 1
 Title.Position = UDim2.new(0, 0, 0, 10)
 Title.Size = UDim2.new(1, 0, 0, 30)
 Title.Font = Enum.Font.GothamBold
-Title.Text = "ZYPHERION | CUSTOM SERVER"
+Title.Text = "ARSENAL CUSTOM SERVER"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 18
 
@@ -50,6 +50,20 @@ local UIListLayout = Instance.new("UIListLayout")
 UIListLayout.Parent = ContentFrame
 UIListLayout.Padding = UDim.new(0, 10)
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+local Footer = Instance.new("TextLabel")
+Footer.Name = "Footer"
+Footer.Parent = MainFrame
+Footer.BackgroundTransparency = 1
+Footer.Position = UDim2.new(0, 0, 1, -25)
+Footer.Size = UDim2.new(1, 0, 0, 20)
+Footer.Font = Enum.Font.Gotham
+Footer.Text = "made by Zypherion"
+Footer.TextColor3 = Color3.fromRGB(100, 100, 110)
+Footer.TextSize = 15
+Footer.TextTransparency = 0.1
+Footer.TextYAlignment = Enum.TextYAlignment.Bottom
+
 
 function CustomServers:Dropdown(options)
     local dropdownFrame = Instance.new("Frame")
@@ -224,6 +238,7 @@ function CustomServers:Button(options)
     
     button.MouseButton1Click:Connect(options.callback)
 end
+
 
 local id = ''
 local gm = ''
