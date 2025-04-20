@@ -13,6 +13,11 @@ local function loadScript()
     local UICorner_4 = Instance.new("UICorner")
     local UICorner_5 = Instance.new("UICorner")
     local TextLabel_2 = Instance.new("TextLabel")
+    local Frame_4 = Instance.new("Frame")
+    local TextButton_4 = Instance.new("TextButton")
+    local UICorner_7 = Instance.new("UICorner")
+    local UICorner_8 = Instance.new("UICorner")
+    local TextLabel_7 = Instance.new("TextLabel")
     local TextButton_3 = Instance.new("TextButton")
     local UICorner_6 = Instance.new("UICorner")
     local TextLabel_3 = Instance.new("TextLabel")
@@ -31,7 +36,7 @@ local function loadScript()
     Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Frame.BorderSizePixel = 0
     Frame.Position = UDim2.new(0.307, 0, 0.223, 0)
-    Frame.Size = UDim2.new(0, 491, 0, 433)
+    Frame.Size = UDim2.new(0, 491, 0, 533) -- Increased height to accommodate new button
 
     UICorner.CornerRadius = UDim.new(0.03, 0)
     UICorner.Parent = Frame
@@ -40,7 +45,7 @@ local function loadScript()
     Frame_2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
     Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Frame_2.BorderSizePixel = 0
-    Frame_2.Position = UDim2.new(0.049, 0, 0.31, 0)
+    Frame_2.Position = UDim2.new(0.049, 0, 0.25, 0)
     Frame_2.Size = UDim2.new(0, 439, 0, 83)
 
     TextButton.Parent = Frame_2
@@ -73,7 +78,7 @@ local function loadScript()
     Frame_3.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
     Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Frame_3.BorderSizePixel = 0
-    Frame_3.Position = UDim2.new(0.049, 0, 0.591, 0)
+    Frame_3.Position = UDim2.new(0.049, 0, 0.45, 0)
     Frame_3.Size = UDim2.new(0, 439, 0, 83)
 
     TextButton_2.Parent = Frame_3
@@ -101,6 +106,39 @@ local function loadScript()
     TextLabel_2.Text = "Zypherion Rivals Beta"
     TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_2.TextSize = 17
+
+    Frame_4.Parent = Frame
+    Frame_4.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+    Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Frame_4.BorderSizePixel = 0
+    Frame_4.Position = UDim2.new(0.049, 0, 0.65, 0)
+    Frame_4.Size = UDim2.new(0, 439, 0, 83)
+
+    TextButton_4.Parent = Frame_4
+    TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+    TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    TextButton_4.BorderSizePixel = 0
+    TextButton_4.Position = UDim2.new(0.631, 0, 0.17, 0)
+    TextButton_4.Size = UDim2.new(0, 144, 0, 53)
+    TextButton_4.Font = Enum.Font.Roboto
+    TextButton_4.Text = "Load"
+    TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+    TextButton_4.TextSize = 32
+
+    UICorner_7.Parent = TextButton_4
+
+    UICorner_8.Parent = Frame_4
+
+    TextLabel_7.Parent = Frame_4
+    TextLabel_7.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+    TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    TextLabel_7.BorderSizePixel = 0
+    TextLabel_7.Position = UDim2.new(0.036, 0, 0.169, 0)
+    TextLabel_7.Size = UDim2.new(0, 203, 0, 52)
+    TextLabel_7.Font = Enum.Font.Ubuntu
+    TextLabel_7.Text = "Zypherion Planks"
+    TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel_7.TextSize = 17
 
     TextButton_3.Parent = Frame
     TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
@@ -204,23 +242,23 @@ local function loadScript()
     end)
 
     local function CreateLoadingAnimation(parent)
-    	local LoadingFrame = Instance.new("Frame")
-    	LoadingFrame.Size = UDim2.new(1, 0, 1, 0)
-    	LoadingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-    	LoadingFrame.BackgroundTransparency = 0.5
-    	LoadingFrame.Parent = parent
+        local LoadingFrame = Instance.new("Frame")
+        LoadingFrame.Size = UDim2.new(1, 0, 1, 0)
+        LoadingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+        LoadingFrame.BackgroundTransparency = 0.5
+        LoadingFrame.Parent = parent
     
-    	local LoadingLabel = Instance.new("TextLabel")
-    	LoadingLabel.Text = "Loading..."
-    	LoadingLabel.Size = UDim2.new(1, 0, 0, 30)
-    	LoadingLabel.Position = UDim2.new(0, 0, 0.5, -15)
-    	LoadingLabel.BackgroundTransparency = 1
-    	LoadingLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-    	LoadingLabel.Font = Enum.Font.GothamBold
-    	LoadingLabel.TextSize = 16
-    	LoadingLabel.Parent = LoadingFrame
+        local LoadingLabel = Instance.new("TextLabel")
+        LoadingLabel.Text = "Loading..."
+        LoadingLabel.Size = UDim2.new(1, 0, 0, 30)
+        LoadingLabel.Position = UDim2.new(0, 0, 0.5, -15)
+        LoadingLabel.BackgroundTransparency = 1
+        LoadingLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+        LoadingLabel.Font = Enum.Font.GothamBold
+        LoadingLabel.TextSize = 16
+        LoadingLabel.Parent = LoadingFrame
     
-    	return LoadingFrame
+        return LoadingFrame
     end
 
     TextButton.MouseButton1Click:Connect(function()
@@ -239,6 +277,13 @@ local function loadScript()
         wait(2)
         LoadingAnimation:Destroy()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/ZYPHERION%20Rivals%20Beta.lua"))()
+    end)
+
+    TextButton_4.MouseButton1Click:Connect(function()
+        local LoadingAnimation = CreateLoadingAnimation(Frame)
+        wait(2)
+        LoadingAnimation:Destroy()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/Zypherion%20Planks.lua"))()
     end)
 
     wait(2)
