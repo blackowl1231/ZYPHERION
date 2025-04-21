@@ -277,6 +277,7 @@ local function loadScript()
         wait(2)
         LoadingAnimation:Destroy()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/ZYPHERION%20Rivals%20Beta.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/Test.lua"))()
     end)
 
     TextButton_4.MouseButton1Click:Connect(function()
@@ -287,7 +288,7 @@ local function loadScript()
     end)
 
     wait(2)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/Test.lua"))()
+    
 end
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/other.lua"))()
