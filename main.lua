@@ -1,297 +1,390 @@
-local function loadScript()
-    -- Instances
-    local ScreenGui = Instance.new("ScreenGui")
-    local Frame = Instance.new("Frame")
-    local UICorner = Instance.new("UICorner")
-    local Frame_2 = Instance.new("Frame")
-    local TextButton = Instance.new("TextButton")
-    local UICorner_2 = Instance.new("UICorner")
-    local UICorner_3 = Instance.new("UICorner")
-    local TextLabel = Instance.new("TextLabel")
-    local Frame_3 = Instance.new("Frame")
-    local TextButton_2 = Instance.new("TextButton")
-    local UICorner_4 = Instance.new("UICorner")
-    local UICorner_5 = Instance.new("UICorner")
-    local TextLabel_2 = Instance.new("TextLabel")
-    local Frame_4 = Instance.new("Frame")
-    local TextButton_4 = Instance.new("TextButton")
-    local UICorner_7 = Instance.new("UICorner")
-    local UICorner_8 = Instance.new("UICorner")
-    local TextLabel_7 = Instance.new("TextLabel")
-    local TextButton_3 = Instance.new("TextButton")
-    local UICorner_6 = Instance.new("UICorner")
-    local TextLabel_3 = Instance.new("TextLabel")
-    local TextLabel_4 = Instance.new("TextLabel")
-    local TextLabel_5 = Instance.new("TextLabel")
-    local TextLabel_6 = Instance.new("TextLabel")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/other.lua"))()
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Arsenal = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local Loadbtn = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local CloseButton = Instance.new("TextButton")
+local Planks = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local Rivals = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local CounterBlox = Instance.new("Frame")
+local TextLabel_8 = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local Universal = Instance.new("Frame")
+local TextLabel_9 = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_10 = Instance.new("TextLabel")
+local SelectedScript = Instance.new("TextLabel")
 
-    -- Properties
-    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
-    ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-    ScreenGui.DisplayOrder = 9999
+local ArsenalStroke = Instance.new("UIStroke")
+local PlanksStroke = Instance.new("UIStroke")
+local RivalsStroke = Instance.new("UIStroke")
+local CounterBloxStroke = Instance.new("UIStroke")
+local UniversalStroke = Instance.new("UIStroke")
 
-    Frame.Parent = ScreenGui
-    Frame.Active = true
-    Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-    Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Frame.BorderSizePixel = 0
-    Frame.Position = UDim2.new(0.307, 0, 0.223, 0)
-    Frame.Size = UDim2.new(0, 491, 0, 533) -- Increased height to accommodate new button
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
-    UICorner.CornerRadius = UDim.new(0.03, 0)
-    UICorner.Parent = Frame
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(17, 18, 20)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0883081928, 0, 0.110332131, 0)
+Frame.Size = UDim2.new(0, 1017, 0, 600)
+Frame.Active = true
+Frame.Draggable = true
 
-    Frame_2.Parent = Frame
-    Frame_2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-    Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Frame_2.BorderSizePixel = 0
-    Frame_2.Position = UDim2.new(0.049, 0, 0.25, 0)
-    Frame_2.Size = UDim2.new(0, 439, 0, 83)
+UICorner.CornerRadius = UDim.new(0, 25)
+UICorner.Parent = Frame
 
-    TextButton.Parent = Frame_2
-    TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-    TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    TextButton.BorderSizePixel = 0
-    TextButton.Position = UDim2.new(0.631, 0, 0.17, 0)
-    TextButton.Size = UDim2.new(0, 144, 0, 53)
-    TextButton.Font = Enum.Font.Roboto
-    TextButton.Text = "Load"
-    TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-    TextButton.TextSize = 32
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.571090877, 0, 0.218952939, 0)
+TextLabel.Size = UDim2.new(0, 316, 0, 63)
+TextLabel.Font = Enum.Font.Nunito
+TextLabel.Text = "ZYPHERION"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
 
-    UICorner_2.Parent = TextButton
+TextLabel_2.Parent = TextLabel
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 0.61860466, 0)
+TextLabel_2.Size = UDim2.new(0, 408, 0, 244)
+TextLabel_2.Font = Enum.Font.Nunito
+TextLabel_2.Text = ""
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextTransparency = 0.400
+TextLabel_2.TextWrapped = true
 
-    UICorner_3.Parent = Frame_2
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = Frame
+Arsenal.BackgroundColor3 = Color3.fromRGB(17, 18, 20)
+Arsenal.BackgroundTransparency = 0.900
+Arsenal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Arsenal.BorderSizePixel = 0
+Arsenal.Position = UDim2.new(0.031160038, 0, 0.0357386284, 0)
+Arsenal.Size = UDim2.new(0, 387, 0, 84)
 
-    TextLabel.Parent = Frame_2
-    TextLabel.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-    TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    TextLabel.BorderSizePixel = 0
-    TextLabel.Position = UDim2.new(0.036, 0, 0.169, 0)
-    TextLabel.Size = UDim2.new(0, 203, 0, 52)
-    TextLabel.Font = Enum.Font.Ubuntu
-    TextLabel.Text = "Zypherion Arsenal Beta"
-    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-    TextLabel.TextSize = 17
+ArsenalStroke.Parent = Arsenal
+ArsenalStroke.Color = Color3.fromRGB(26, 29, 37)
+ArsenalStroke.Thickness = 2
+ArsenalStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 
-    Frame_3.Parent = Frame
-    Frame_3.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-    Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Frame_3.BorderSizePixel = 0
-    Frame_3.Position = UDim2.new(0.049, 0, 0.45, 0)
-    Frame_3.Size = UDim2.new(0, 439, 0, 83)
+UICorner_2.CornerRadius = UDim.new(0, 25)
+UICorner_2.Parent = Arsenal
 
-    TextButton_2.Parent = Frame_3
-    TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-    TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    TextButton_2.BorderSizePixel = 0
-    TextButton_2.Position = UDim2.new(0.631, 0, 0.17, 0)
-    TextButton_2.Size = UDim2.new(0, 144, 0, 53)
-    TextButton_2.Font = Enum.Font.Roboto
-    TextButton_2.Text = "Load"
-    TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-    TextButton_2.TextSize = 32
+TextLabel_3.Parent = Arsenal
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.124573149, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 281, 0, 78)
+TextLabel_3.Font = Enum.Font.Nunito
+TextLabel_3.Text = "Arsenal"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 62.000
+TextLabel_3.TextWrapped = true
 
-    UICorner_4.Parent = TextButton_2
+Loadbtn.Name = "Loadbtn"
+Loadbtn.Parent = Frame
+Loadbtn.BackgroundColor3 = Color3.fromRGB(27, 29, 37)
+Loadbtn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Loadbtn.BorderSizePixel = 0
+Loadbtn.Position = UDim2.new(0.527222872, 0, 0.655968249, 0)
+Loadbtn.Size = UDim2.new(0, 405, 0, 62)
+Loadbtn.Font = Enum.Font.Nunito
+Loadbtn.Text = "Load"
+Loadbtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loadbtn.TextScaled = true
+Loadbtn.TextSize = 14.000
+Loadbtn.TextWrapped = true
 
-    UICorner_5.Parent = Frame_3
+UICorner_3.CornerRadius = UDim.new(0, 25)
+UICorner_3.Parent = Loadbtn
 
-    TextLabel_2.Parent = Frame_3
-    TextLabel_2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-    TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    TextLabel_2.BorderSizePixel = 0
-    TextLabel_2.Position = UDim2.new(0.036, 0, 0.169, 0)
-    TextLabel_2.Size = UDim2.new(0, 203, 0, 52)
-    TextLabel_2.Font = Enum.Font.Ubuntu
-    TextLabel_2.Text = "Zypherion Rivals Beta"
-    TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-    TextLabel_2.TextSize = 17
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = Frame
+CloseButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0.95838964, 0, 0, 0)
+CloseButton.Size = UDim2.new(0, 35, 0, 41)
+CloseButton.Font = Enum.Font.FredokaOne
+CloseButton.Text = "X"
+CloseButton.TextColor3 = Color3.fromRGB(58, 67, 98)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14.000
+CloseButton.TextWrapped = true
 
-    Frame_4.Parent = Frame
-    Frame_4.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-    Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Frame_4.BorderSizePixel = 0
-    Frame_4.Position = UDim2.new(0.049, 0, 0.65, 0)
-    Frame_4.Size = UDim2.new(0, 439, 0, 83)
+Planks.Name = "Planks"
+Planks.Parent = Frame
+Planks.BackgroundColor3 = Color3.fromRGB(17, 18, 20)
+Planks.BackgroundTransparency = 0.900
+Planks.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Planks.BorderSizePixel = 0
+Planks.Position = UDim2.new(0.031160038, 0, 0.219392911, 0)
+Planks.Size = UDim2.new(0, 387, 0, 84)
 
-    TextButton_4.Parent = Frame_4
-    TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-    TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    TextButton_4.BorderSizePixel = 0
-    TextButton_4.Position = UDim2.new(0.631, 0, 0.17, 0)
-    TextButton_4.Size = UDim2.new(0, 144, 0, 53)
-    TextButton_4.Font = Enum.Font.Roboto
-    TextButton_4.Text = "Load"
-    TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-    TextButton_4.TextSize = 32
+PlanksStroke.Parent = Planks
+PlanksStroke.Color = Color3.fromRGB(26, 29, 37)
+PlanksStroke.Thickness = 2
+PlanksStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 
-    UICorner_7.Parent = TextButton_4
+UICorner_4.CornerRadius = UDim.new(0, 25)
+UICorner_4.Parent = Planks
 
-    UICorner_8.Parent = Frame_4
+TextLabel_4.Parent = Planks
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.14229472, 0, -3.63304508e-07, 0)
+TextLabel_4.Size = UDim2.new(0, 281, 0, 84)
+TextLabel_4.Font = Enum.Font.Nunito
+TextLabel_4.Text = "Planks"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 62.000
+TextLabel_4.TextWrapped = true
 
-    TextLabel_7.Parent = Frame_4
-    TextLabel_7.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-    TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    TextLabel_7.BorderSizePixel = 0
-    TextLabel_7.Position = UDim2.new(0.036, 0, 0.169, 0)
-    TextLabel_7.Size = UDim2.new(0, 203, 0, 52)
-    TextLabel_7.Font = Enum.Font.Ubuntu
-    TextLabel_7.Text = "Zypherion Planks"
-    TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-    TextLabel_7.TextSize = 17
+Rivals.Name = "Rivals"
+Rivals.Parent = Frame
+Rivals.BackgroundColor3 = Color3.fromRGB(17, 18, 20)
+Rivals.BackgroundTransparency = 0.900
+Rivals.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Rivals.BorderSizePixel = 0
+Rivals.Position = UDim2.new(0.0311599784, 0, 0.419911742, 0)
+Rivals.Size = UDim2.new(0, 387, 0, 84)
 
-    TextButton_3.Parent = Frame
-    TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-    TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    TextButton_3.BorderSizePixel = 0
-    TextButton_3.Position = UDim2.new(0.943, 0, 0.031, 0)
-    TextButton_3.Size = UDim2.new(0, 17, 0, 17)
-    TextButton_3.Font = Enum.Font.SourceSans
-    TextButton_3.Text = ""
-    TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-    TextButton_3.TextSize = 14
+RivalsStroke.Parent = Rivals
+RivalsStroke.Color = Color3.fromRGB(26, 29, 37)
+RivalsStroke.Thickness = 2
+RivalsStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 
-    UICorner_6.CornerRadius = UDim.new(1, 0)
-    UICorner_6.Parent = TextButton_3
+UICorner_5.CornerRadius = UDim.new(0, 25)
+UICorner_5.Parent = Rivals
 
-    TextLabel_3.Parent = Frame
-    TextLabel_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-    TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    TextLabel_3.BorderSizePixel = 0
-    TextLabel_3.Position = UDim2.new(0.08, 0, 0.107, 0)
-    TextLabel_3.Size = UDim2.new(0, 47, 0, 64)
-    TextLabel_3.Font = Enum.Font.FredokaOne
-    TextLabel_3.Text = "ZYPHERION"
-    TextLabel_3.TextColor3 = Color3.fromRGB(255, 0, 0)
-    TextLabel_3.TextSize = 18
+TextLabel_5.Parent = Rivals
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.142294794, 0, -3.59030338e-07, 0)
+TextLabel_5.Size = UDim2.new(0, 275, 0, 84)
+TextLabel_5.Font = Enum.Font.Nunito
+TextLabel_5.Text = "Rivals"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 62.000
+TextLabel_5.TextWrapped = true
 
-    TextLabel_4.Parent = TextLabel_3
-    TextLabel_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-    TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    TextLabel_4.BorderSizePixel = 0
-    TextLabel_4.Position = UDim2.new(-0.141, 0, -0.626, 0)
-    TextLabel_4.Size = UDim2.new(0, 47, 0, 64)
-    TextLabel_4.Font = Enum.Font.Bangers
-    TextLabel_4.Text = "Z"
-    TextLabel_4.TextColor3 = Color3.fromRGB(255, 0, 0)
-    TextLabel_4.TextSize = 61
+TextLabel_6.Parent = Frame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.692038178, 0, 0.0561641678, 0)
+TextLabel_6.Size = UDim2.new(0, 70, 0, 89)
+TextLabel_6.Font = Enum.Font.Bangers
+TextLabel_6.Text = "Z"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
 
-    TextLabel_5.Parent = Frame
-    TextLabel_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-    TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    TextLabel_5.BorderSizePixel = 0
-    TextLabel_5.Position = UDim2.new(0.295315683, 0, 0.856812954, 0)
-    TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
-    TextLabel_5.Font = Enum.Font.SourceSans
-    TextLabel_5.Text = "Thank you for using Zypherion<3"
-    TextLabel_5.TextColor3 = Color3.fromRGB(217, 217, 217)
-    TextLabel_5.TextSize = 14.000
-    
-    TextLabel_6.Parent = Frame
-    TextLabel_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-    TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    TextLabel_6.BorderSizePixel = 0
-    TextLabel_6.Position = UDim2.new(0.592667997, 0, 0.868360281, 0)
-    TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
-    TextLabel_6.Visible = false
-    TextLabel_6.Font = Enum.Font.SourceSans
-    TextLabel_6.Text = "Made by NervigeMuecke"
-    TextLabel_6.TextColor3 = Color3.fromRGB(217, 217, 217)
-    TextLabel_6.TextSize = 14.000
+TextLabel_7.Parent = TextLabel_6
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0, 0, 0.61860466, 0)
+TextLabel_7.Size = UDim2.new(0, 408, 0, 244)
+TextLabel_7.Font = Enum.Font.Nunito
+TextLabel_7.Text = ""
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextTransparency = 0.400
+TextLabel_7.TextWrapped = true
 
-    -- Functions
-    TextButton_3.MouseButton1Click:Connect(function()
-        ScreenGui:Destroy()
-    end)
+CounterBlox.Name = "CounterBlox"
+CounterBlox.Parent = Frame
+CounterBlox.BackgroundColor3 = Color3.fromRGB(17, 18, 20)
+CounterBlox.BackgroundTransparency = 0.900
+CounterBlox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CounterBlox.BorderSizePixel = 0
+CounterBlox.Position = UDim2.new(0.0323932543, 0, 0.620120645, 0)
+CounterBlox.Size = UDim2.new(0, 387, 0, 84)
 
-    local UserInputService = game:GetService("UserInputService")
-    local dragging
-    local dragInput
-    local dragStart
-    local startPos
+CounterBloxStroke.Parent = CounterBlox
+CounterBloxStroke.Color = Color3.fromRGB(26, 29, 37)
+CounterBloxStroke.Thickness = 2
+CounterBloxStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 
-    local function Update(input)
-        local delta = input.Position - dragStart
-        Frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-    end
+TextLabel_8.Parent = CounterBlox
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.142294794, 0, -3.59030338e-07, 0)
+TextLabel_8.Size = UDim2.new(0, 275, 0, 84)
+TextLabel_8.Font = Enum.Font.Nunito
+TextLabel_8.Text = "CounterBlox"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 62.000
+TextLabel_8.TextWrapped = true
 
-    Frame.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-            dragging = true
-            dragStart = input.Position
-            startPos = Frame.Position
+UICorner_6.CornerRadius = UDim.new(0, 25)
+UICorner_6.Parent = CounterBlox
 
-            input.Changed:Connect(function()
-                if input.UserInputState == Enum.UserInputState.End then
-                    dragging = false
-                end
-            end)
-        end
-    end)
+Universal.Name = "Universal"
+Universal.Parent = Frame
+Universal.BackgroundColor3 = Color3.fromRGB(17, 18, 20)
+Universal.BackgroundTransparency = 0.900
+Universal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Universal.BorderSizePixel = 0
+Universal.Position = UDim2.new(0.0312633105, 0, 0.821787298, 0)
+Universal.Size = UDim2.new(0, 387, 0, 84)
 
-    Frame.InputChanged:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-            dragInput = input
-        end
-    end)
+UniversalStroke.Parent = Universal
+UniversalStroke.Color = Color3.fromRGB(26, 29, 37)
+UniversalStroke.Thickness = 2
+UniversalStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 
-    UserInputService.InputChanged:Connect(function(input)
-        if input == dragInput and dragging then
-            Update(input)
-        end
-    end)
+TextLabel_9.Parent = Universal
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.142294794, 0, -3.59030338e-07, 0)
+TextLabel_9.Size = UDim2.new(0, 275, 0, 84)
+TextLabel_9.Font = Enum.Font.Nunito
+TextLabel_9.Text = "Universal"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 62.000
+TextLabel_9.TextWrapped = true
 
-    local function CreateLoadingAnimation(parent)
-        local LoadingFrame = Instance.new("Frame")
-        LoadingFrame.Size = UDim2.new(1, 0, 1, 0)
-        LoadingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-        LoadingFrame.BackgroundTransparency = 0.5
-        LoadingFrame.Parent = parent
-    
-        local LoadingLabel = Instance.new("TextLabel")
-        LoadingLabel.Text = "Loading..."
-        LoadingLabel.Size = UDim2.new(1, 0, 0, 30)
-        LoadingLabel.Position = UDim2.new(0, 0, 0.5, -15)
-        LoadingLabel.BackgroundTransparency = 1
-        LoadingLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-        LoadingLabel.Font = Enum.Font.GothamBold
-        LoadingLabel.TextSize = 16
-        LoadingLabel.Parent = LoadingFrame
-    
-        return LoadingFrame
-    end
+UICorner_7.CornerRadius = UDim.new(0, 25)
+UICorner_7.Parent = Universal
 
-    TextButton.MouseButton1Click:Connect(function()
-        local LoadingAnimation = CreateLoadingAnimation(Frame)
-        wait(2)
-        LoadingAnimation:Destroy()
-        if game.PlaceId == 286090429 then 
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/ZYPHERION%20Arsenal%20Beta.lua"))()
-        elseif game.PlaceId == 137649148001818 then 
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/A3%20CTE.lua"))()
-        end
-    end)
+TextLabel_10.Parent = Frame
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(17, 18, 20)
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0.627807558, 0, 0.87694031, 0)
+TextLabel_10.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_10.Font = Enum.Font.Nunito
+TextLabel_10.Text = "Thank you for using Zypherion <3"
+TextLabel_10.TextColor3 = Color3.fromRGB(40, 58, 85)
+TextLabel_10.TextSize = 34.000
 
-    TextButton_2.MouseButton1Click:Connect(function()
-        local LoadingAnimation = CreateLoadingAnimation(Frame)
-        wait(2)
-        LoadingAnimation:Destroy()
-        
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/ZYPHERION%20Rivals%20Beta.lua"))()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/Test.lua"))()
-    end)
+SelectedScript.Name = "SelectedScript"
+SelectedScript.Parent = Frame
+SelectedScript.BackgroundColor3 = Color3.fromRGB(17, 18, 20)
+SelectedScript.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SelectedScript.BorderSizePixel = 0
+SelectedScript.Position = UDim2.new(0.627807558, 0, 0.446940303, 0)
+SelectedScript.Size = UDim2.new(0, 200, 0, 50)
+SelectedScript.Font = Enum.Font.Nunito
+SelectedScript.Text = "No Script Selected"
+SelectedScript.TextColor3 = Color3.fromRGB(255, 255, 255)
+SelectedScript.TextSize = 34.000
 
-    TextButton_4.MouseButton1Click:Connect(function()
-        local LoadingAnimation = CreateLoadingAnimation(Frame)
-        wait(2)
-        LoadingAnimation:Destroy()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/Zypherion%20Planks.lua"))()
-    end)
+local selectedOption = nil
+local selectedColor = Color3.fromRGB(140, 155, 208)
+local defaultColor = Color3.fromRGB(26, 29, 37)
 
-    wait(2)
-    
+local function selectScript(scriptFrame, scriptName)
+	ArsenalStroke.Color = defaultColor
+	PlanksStroke.Color = defaultColor
+	RivalsStroke.Color = defaultColor
+	CounterBloxStroke.Color = defaultColor
+	UniversalStroke.Color = defaultColor
+
+	if scriptFrame then
+		scriptFrame:FindFirstChildOfClass("UIStroke").Color = selectedColor
+		selectedOption = scriptName
+		SelectedScript.Text = scriptName
+	else
+		selectedOption = nil
+		SelectedScript.Text = "No Script Selected"
+	end
 end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/other.lua"))()
+Arsenal.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		selectScript(Arsenal, "Arsenal")
+	end
+end)
 
-loadScript()
+Planks.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		selectScript(Planks, "Planks")
+	end
+end)
+
+Rivals.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		selectScript(Rivals, "Rivals")
+	end
+end)
+
+CounterBlox.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		selectScript(CounterBlox, "Currently in Developement")
+	end
+end)
+
+Universal.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		selectScript(Universal, "Currently in Developement")
+	end
+end)
+
+Loadbtn.MouseButton1Click:Connect(function()
+	if selectedOption then
+
+		if selectedOption == "Arsenal" then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/ZYPHERION%20Arsenal%20Beta.lua"))()
+		elseif selectedOption == "Planks" then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/Zypherion%20Planks.lua"))()
+		elseif selectedOption == "Rivals" then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/ZYPHERION%20Rivals%20Beta.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/Test.lua"))()
+		elseif selectedOption == "CounterBlox" then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/ZYPHERION%20CounterBlox.lua"))()
+		elseif selectedOption == "Universal" then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/Games/ZYPHERION%20Universal.lua"))()
+		end
+	else
+		SelectedScript.Text = "Please select a script!"
+		wait(2)
+		SelectedScript.Text = "No Script Selected"
+	end
+end)
+
+CloseButton.MouseButton1Click:Connect(function()
+	ScreenGui:Destroy()
+end)
