@@ -33,7 +33,7 @@ local RivalsStroke = Instance.new("UIStroke")
 local CounterBloxStroke = Instance.new("UIStroke")
 local UniversalStroke = Instance.new("UIStroke")
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 
