@@ -36,6 +36,7 @@ local UniversalStroke = Instance.new("UIStroke")
 ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
+ScreenGui.DisplayOrder = 9999
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(17, 18, 20)
