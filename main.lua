@@ -360,7 +360,7 @@ end)
 
 Universal.InputBegan:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseButton1 then
-		selectScript(Universal, "Currently in Developement")
+		selectScript(Universal, "Universal")
 	end
 end)
 
