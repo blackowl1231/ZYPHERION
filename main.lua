@@ -33,10 +33,11 @@ local RivalsStroke = Instance.new("UIStroke")
 local CounterBloxStroke = Instance.new("UIStroke")
 local UniversalStroke = Instance.new("UIStroke")
 
-ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game:GetService("CoreGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
-ScreenGui.DisplayOrder = 9999
+ScreenGui.DisplayOrder = 999999
+ScreenGui.IgnoreGuiInset = true
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(17, 18, 20)
@@ -46,6 +47,7 @@ Frame.Position = UDim2.new(0.0883081928, 0, 0.110332131, 0)
 Frame.Size = UDim2.new(0, 800, 0, 500)
 Frame.Active = true
 Frame.Draggable = true
+Frame.ZIndex = 10
 
 UICorner.CornerRadius = UDim.new(0, 25)
 UICorner.Parent = Frame
@@ -360,7 +362,7 @@ end)
 
 Universal.InputBegan:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseButton1 then
-		selectScript(Universal, "Universal")
+		selectScript(Universal, "Currently in Developement")
 	end
 end)
 
